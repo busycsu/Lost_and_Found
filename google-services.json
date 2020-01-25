@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1021668102318",
+    "firebase_url": "https://lostandfound-90ca9.firebaseio.com",
+    "project_id": "lostandfound-90ca9",
+    "storage_bucket": "lostandfound-90ca9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021668102318:android:d40907bba985dae87c9d3f",
+        "android_client_info": {
+          "package_name": "edu.ucsb.cs.cs184.csu.lost_and_found"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021668102318-cj079mkvlsv2p5ccu0uf96vqq729b8km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC35Us44kN8XtBC_xXKextHrF2MuLZNhhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021668102318-cj079mkvlsv2p5ccu0uf96vqq729b8km.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
