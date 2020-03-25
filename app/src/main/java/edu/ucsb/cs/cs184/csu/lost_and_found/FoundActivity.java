@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class FoundActivity extends AppCompatActivity {
     private static DatabaseReference my_db_ref;
     Button submitButton, submitImage;
-    FoundItem item;
+    FoundItem item = new FoundItem();
     EditText itemName, time, description;
     String itemKey = "";
     Context cur = this;
@@ -39,8 +39,8 @@ public class FoundActivity extends AppCompatActivity {
         my_db_ref = FirebaseDatabase.getInstance().getReference("item");
 
         //get the user name of the user
-//        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-//        item.username = currentUser.getUid();
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        item.username = currentUser.getUid();
 
         //textView set up
         itemName = findViewById(R.id.itemName);
@@ -55,7 +55,6 @@ public class FoundActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                item = new FoundItem();
                 if(itemName.getText().toString().length()>0){
                     item.itemName = itemName.getText().toString();
                 }else {
