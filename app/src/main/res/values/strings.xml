@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lost_and_found</string>
+    <string name="title_activity_lost_result">LostResultActivity</string>
 </resources>
